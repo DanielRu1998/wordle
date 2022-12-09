@@ -15,7 +15,7 @@ export const Statics = ({actualWord, numGames, numVictories}: StaticsProps) => {
     }
 
     return (
-        <div className={`flex flex-row justify-center items-center fixed w-full h-screen top-0 left-0 ${darkMode ? 'bg-darkOpacity': 'bg-whiteOpacity'}`}>
+        <div className={`flex flex-row justify-center items-center outline-none overflow-x-hidden overflow-y-auto fixed w-full h-screen top-0 left-0 ${darkMode ? 'bg-darkOpacity': 'bg-whiteOpacity'}`}>
             <div style={{height: '30rem'}} className={`select-none flex flex-col justify-between items-center z-10 py-10 absolute rounded border-black border tam-screen text-center ${darkMode ? 'bg-screenB border-white text-white': 'bg-screenW border-black text-black'}`}>
                 <h3 className="text-3xl font-black">Estadísticas</h3>
                 <div className="w-full flex flex-row justify-around items-center">

@@ -44,4 +44,26 @@ body, html {
     .tam-screen {
         width: 100%;
     }
+    .boxSur {
+        width: 3rem !important;
+        height: 3rem !important;
+    }
+    .keyBox {
+        width: 2rem !important;
+        height: 2rem !important;
+        font-size: 12px !important;
+    }
+}
+
+@media (max-width: 400px) {
+    .boxSur {
+        width: 2rem !important;
+        height: 2rem !important;
+    }
+
+    .keyBox {
+        width: 1.5rem !important;
+        height: 1.5rem !important;
+        font-size: 9px !important;
+    }
 }

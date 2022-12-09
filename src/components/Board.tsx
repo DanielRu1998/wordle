@@ -19,7 +19,7 @@ export const Board = () => {
                                     <div
                                         key={`board-item-${boardY}`}
                                         style={{backgroundColor: `${darkMode ? (box.bg === '#dbddde' ? '#3c4150' : box.bg) : box.bg}`}}
-                                        className={`flex flex-row justify-center items-center m-1 text-3xl text-white font-black rounded-md w-20 h-20`}
+                                        className={`boxSur flex flex-row justify-center items-center m-1 text-3xl text-white font-black rounded-md w-20 h-20`}
                                     >
                                         {box.word}
                                     </div>

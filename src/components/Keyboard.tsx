@@ -21,7 +21,7 @@ export const Keyboard = () => {
                             row.map(letter => (
                                 <div key={`letter-${letter[0]}`}>
                                     <div
-                                        className={`flex flex-row justify-center items-center m-1 text-1xl rounded-md h-11 cursor-pointer
+                                        className={`keyBox flex flex-row justify-center items-center m-1 text-1xl rounded-md h-11 cursor-pointer
                                         ${(letter[0] === 'ENTER' || letter[0] === '⌫') ? 'w-20' : 'w-10'} ${darkMode ? 'text-white' : 'text-black'}`}
                                         style={{ backgroundColor: `${darkMode ? (letter[1] === '#d4d6da' ? '#565f7f' : letter[1]) : letter[1]}`}}
                                         onClick={() => playEvent(letter[0])}
