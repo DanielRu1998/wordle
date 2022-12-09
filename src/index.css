@@ -53,12 +53,18 @@ body, html {
         height: 2rem !important;
         font-size: 12px !important;
     }
+    .wizzArt {
+        font-size: 14px !important;
+    }
 }
 
 @media (max-width: 400px) {
     .boxSur {
         width: 2rem !important;
         height: 2rem !important;
+    }
+    .wizzArt {
+        font-size: 10px !important;
     }
 
     .keyBox {

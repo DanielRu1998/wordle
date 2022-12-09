@@ -5,8 +5,8 @@ export const Wizard = () => {
     const { closeModal, darkMode } = useContext(WordleContext);
 
     return (
-        <div className={`flex flex-row justify-center outline-none overflow-x-hidden overflow-y-auto items-center fixed w-full h-screen top-0 left-0 ${darkMode ? 'bg-darkOpacity': 'bg-whiteOpacity'}`}>
-            <div className={`select-none flex flex-col justify-between z-10 py-6 px-12 absolute rounded border-black border ${darkMode ? 'bg-screenB border-white text-white': 'bg-screenW border-black text-black'}`}>
+        <div className={`outline-none overflow-x-hidden overflow-y-auto flex flex-row justify-center items-center fixed w-full h-full top-0 left-0 ${darkMode ? 'bg-darkOpacity': 'bg-whiteOpacity'}`}>
+            <div  className={`wizzArt select-none flex flex-col justify-between z-10 py-6 px-12 my-24 absolute rounded border-black border ${darkMode ? 'bg-screenB border-white text-white': 'bg-screenW border-black text-black'}`}>
                 <h3 className="text-3xl font-black text-center mb-6">Cómo jugar</h3>
                 <p>Adivina la palabra oculta en cinco intentos.<br /> <br /> 
                    Cada intento debe ser una palabra válida de 5 letras. <br /> <br /> 

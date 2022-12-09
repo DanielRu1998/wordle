@@ -1,13 +1,13 @@
-import { useEffect, useState } from 'react';
+//import { useEffect, useState } from 'react';
 
-import library from "../data/words.txt"
+//import library from "../data/words.txt"
 
 import { WordleGame, Nav, Board, Keyboard, Statics, Wizard } from '../components';
 
 const myLibrary: string[] = ['ARBOL', 'PETRA', 'BEBES', 'ATRAS', 'FRIOS', 'TOTEM', 'HOJAS', 'JUJUS', 'POLEA', 'JARDI', 'KIKIS', 'MEMES', 'DRIKA', 'TOTEM', 'MAGOS'];
 
 export const Feed = () => {
-    const [myLibrary, setMyLibrary] = useState([] as string[]);
+    /* const [myLibrary, setMyLibrary] = useState([] as string[]);
 
      const getWords = async() => {
         const file = await fetch(library);
@@ -16,7 +16,7 @@ export const Feed = () => {
     };
     useEffect(() => {
         getWords();
-    }, []);
+    }, []); */
 
     return (
         <>
