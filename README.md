@@ -11,7 +11,7 @@ Este es un juego de adivinar la palabra oculta en un tiempo de 5min
 - React + TypeScript
 - TailwindCSS
 
-## Patron de diseño (Compound component)
+## Patrón de diseño (Compound component)
 
 A continuación la parte de implementación dinámica
 

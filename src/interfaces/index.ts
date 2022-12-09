@@ -7,6 +7,7 @@ export interface WordleGameProps {
 
 export interface WordleGameHandlers {
     actualWord: string;
+    darkMode: boolean;
     numVictories: number;
     numGames: number;
     showStatics: boolean;

@@ -65,7 +65,7 @@ export const usePlay = ({ initialValues, setStimulus } : useBoardProps) => {
     }
 
     const getColorBox = (letter: string): [boolean, string] => {
-        if (!words.fragmentWord.hasOwnProperty(letter)) return [false, '#949b9f'];
+        if (!words.fragmentWord.hasOwnProperty(letter)) return [false, '#939B9F'];
         if (words.fragmentWord[letter].hasOwnProperty(position[1])) {
             if (correctAnswers + 1 === words.entireWord.length) {
                 setStimulus(prev => ({
@@ -75,10 +75,10 @@ export const usePlay = ({ initialValues, setStimulus } : useBoardProps) => {
                     numberOfVictories: prev.numberOfVictories + 1,
                     showStatics: true
                 }));
-                return [true, '#66a15f'];
+                return [true, '#6AAA64'];
             }
             setCorrectAnswers(prev => prev + 1);
-            return [false, '#66a15f'];
+            return [false, '#6AAA64'];
         }
         return [false, '#ceb02c'];
     }
@@ -108,11 +108,13 @@ export const usePlay = ({ initialValues, setStimulus } : useBoardProps) => {
 
     useEffect(() => {
         resetGame(true);
+        // eslint-disable-next-line
     }, [initialValues]);
 
     useEffect(() => {
         refTimer.current && clearInterval(refTimer.current);
         refTimer.current = setInterval(() => resetGame(), 1000 * 60 * initialValues.timeInMinutes);
+         // eslint-disable-next-line
     }, [words]);
 
     useEffect(() => {

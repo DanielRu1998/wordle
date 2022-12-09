@@ -28,6 +28,7 @@ export const WordleGame = ({ children, initialValues }: WordleGameProps) => {
             <div>
                 {
                     children({
+                        darkMode,
                         showStatics,
                         showWizard,
                         actualWord,
